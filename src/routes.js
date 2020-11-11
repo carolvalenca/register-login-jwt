@@ -5,7 +5,7 @@ const RegisterLoginController = require ('./controllers/register_login.controlle
 
 const verifyToken = require('./services/verify_token')
 
-routes.post('/register', RegisterLoginController.createUser)
+routes.post('/register', RegisterLoginController.register)
 
 routes.post('/login', RegisterLoginController.login)
 
