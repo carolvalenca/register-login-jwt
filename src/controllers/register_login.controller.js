@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken')
 
 const users = []
 
-function createUser(req, res) {
+function register(req, res) {
     const { email, password } = req.body
 
     const user = users.filter(item => (
@@ -39,7 +39,7 @@ function welcome(req, res) {
 }
 
 module.exports = {
-    createUser,
+    register,
     login,
     welcome
 }
